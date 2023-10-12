@@ -7,15 +7,14 @@
 svg {
     position: absolute;
     z-index: 1;
-    max-width: 10vmax;
+    color: #D8D8D8;
+    max-width: 3vmax;
     left: 0;
     align-items: start;
 }
 img{
-    max-width: 30vmax;
+    max-width: 110vmax;
 }
-
-
 
 .card {
     position: relative;
@@ -28,6 +27,7 @@ img{
     overflow: hidden;
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    transform-style: preserve-3d;
   }
 .content {
     display: flex;
@@ -46,39 +46,51 @@ img{
     height: 300px;
     background: #353434;
     z-index: -1;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    transition: all 1s ease-out;
   }
   
 .card:hover::before {
-    height: 100%;
+    height: 90%;
   }
   
 .card:hover {
     box-shadow: none;
   }
 
-.content .btn {
+.content .cart {
     color: #D8D8D8;
     text-decoration: none;
     padding-left: 50px;
     padding-right: 50px;
     font-weight: 600;
-    border: none;
     cursor: pointer;
     background: #353434;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
-.card:hover .btn {
+.card:hover .cart {
     color: #353434;
     background: #D8D8D8;
   }
   
-.content .btn:hover {
+.content .cart:hover {
     color: #353434;
   }
   
-.content .btn:active {
+.content .cart:active {
     box-shadow: none;
   }
+button.cart{
+  border-radius: 15vmax;
+  border: 2px solid #D8D8D8;
+  padding: 1.5vmax; 
+  padding-left: 4vmax;
+  padding-right: 4vmax;
+  font-size: 3vmax;
   
+}
+.price{
+  font-size: 5vmax;
+  font-family: Impact;
+  padding: none;
+}
