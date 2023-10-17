@@ -97,3 +97,4 @@ p{
 .weighti{
   transform: translate(6vmax,12vmax);
 }
+/* should make it on lcik instead of hover for phone users. */
