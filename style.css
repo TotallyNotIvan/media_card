@@ -1,9 +1,13 @@
 svg {
     position: absolute;
-    color: #D8D8D8;
-    max-width: 2.5vmax;
-    left: 0;
-    align-items: center;
+    max-width: 34px;
+    top: -3rem;
+}
+.left{
+  transform: translate(-4vmax)
+}
+.right{
+  transform: translate(4vmax)
 }
 .card {
     border: 1.5px solid #353434;
@@ -15,6 +19,7 @@ svg {
     overflow: hidden;
     border-radius: 16px;
     background-color: #D8D8D8;
+    box-sizing: unset;
   }
 .content {
     display: flex;
@@ -22,6 +27,7 @@ svg {
     align-items: center;
     color: #D8D8D8;
     z-index:1;
+    font-family: "Arial Black";
   } 
 .card::before {
     content: "";
@@ -35,8 +41,8 @@ svg {
     transition: all .7s ease-out;
   }
 .card:hover::before {
-    height: 90%;
-    z-index: 2;
+    height: 88%;
+    z-index: 0;
   }
 .cart {
     font-weight: 600;
@@ -46,22 +52,48 @@ svg {
     padding: .5vmax; 
     padding-left: 3vmax;
     padding-right: 3vmax;
-    font-size: 3vmax;
-  }
-.card:hover{
-    color: #353434;
-    background: #D8D8D8;
+    font-size: 2.5vmax;
+    font-family: "Arial";
   }
 .price{
   font-size: 3vmax;
   font-family: Impact;
   padding:0;
-  color: #353434;
+  color: #4F4E4A;
+  align-self: flex-start;
+  margin: 0;
+  padding-left: 1vmax;
+
 }
 img{
-  width: 28vmax;
+  padding: 0;
+  width: 30vmax;
   z-index: -1;
 }
 .name{
-  font-size: 6vmax;
+  margin-top: 4vmax;
+  font-size: 2.5vmax;
+}
+p{
+  margin: 0;
+}
+.ammo, .weight{
+  position: absolute;
+  font-family: Arial;
+  top: 32vmax;
+}
+.ammo{
+  left: 4vmax;
+}
+.weight{
+  left: 19vmax;
+}
+.botspace{
+  padding-bottom: 11vmax;
+}
+.ammoi{
+  transform: translate(-6vmax,12vmax)scale(.8)rotate(90deg);
+}
+.weighti{
+  transform: translate(6vmax,12vmax);
 }
